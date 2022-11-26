@@ -1,0 +1,29 @@
+package Question3;
+
+public class CustomerMain {
+
+    public static void main(String[] args) {
+        Customer c=new Customer();
+        c.setAccountNo(0123456);		//to assign the value
+        c.setBalance(6000.00);
+        c.setName("Monalisa");
+        c.setWithdrwamt(1000);
+        System.out.println("The customer details are \n"
+                           +c.getName()+"\n"+c.getAccountNo()+"\n "
+                           +c.getBalance()+"\n "		//get method to fetch value
+                           +c.getWithdrwamt());
+
+
+        Customer c2=new Customer();
+        c2.setAccountNo(123456);
+        c2.setBalance(40000.00);
+        c2.setName("Mrunalini W");
+        c2.setWithdrwamt(10000);
+        System.out.println("The customer details are \n"
+                           +c2.getName()+"\n"+c2.getAccountNo()+"\n "
+                           +c2.getBalance()+"\n"+c2.getWithdrwamt());
+
+
+    }
+
+}
