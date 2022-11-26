@@ -1,0 +1,9 @@
+package Question2;
+public class ArithmaticMain {
+     
+     public static void main(String[] args){
+       adder a=new adder();
+       a.addition(20.30);
+       System.out.println(a.addition(10,10)+" "+a.addition(2,3)+" ");
+     }
+}
