@@ -1,0 +1,55 @@
+
+package Question1;
+import java.util.*;
+import java.util.Scanner;
+public class TransposeMatrix {
+    int i,j, temp;
+    int row,column;
+    int array[][] = new int[row][column];
+    int transpose[][]= newint[row][column];
+
+    System.out.println("Enter Rows:");
+    Scanner s=new Scanner(System.in);
+    row = s.nextInt();
+    System.out.println("Enter Column:");
+    column =s.nextInt();
+
+    void read(Scanner s) {
+
+        int array[][] = new int[row][column];
+        System.out.println("Enter Matrix:");
+        for(i=0; i<row; i++) {
+            for(j=0; j<column; j++) {
+                array[i][j]=s.nextInt();
+                //Sysytem.out.print("    ");
+
+            }
+
+        }
+
+    }
+
+    void trans() {
+        System.out.println("Above Matrix Before Transpose Is :");
+
+        for(i=0; i<row; i++) {
+            for(j=0; j<column; j++) {
+
+                transpose[i][j]=array[i][j];
+                System.out.println(transpose[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+    void display() {
+        System.out.println("The Above Matrix After Transpose Is :");
+        int array[][] = new int[row][column];
+        for(i=0; i<row; i++) {
+            for(j=0; j<column; j++) {
+                System.out.println(array[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+    }
+
+}
